@@ -19,7 +19,7 @@ func Health(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json")
 
-	status := HealthBody{ "alive"}
+	status := HealthBody{"alive"}
 
 	_ = json.NewEncoder(w).Encode(status)
 }

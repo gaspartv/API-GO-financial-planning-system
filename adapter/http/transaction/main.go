@@ -23,9 +23,9 @@ func GetTransactions(w http.ResponseWriter, r *http.Request) {
 
 	transactions := transaction.Transactions{
 		transaction.Transaction{
-			Title: "Salário",
-			Amount: 1200.0,
-			Type: 0,
+			Title:     "Salário",
+			Amount:    1200.0,
+			Type:      0,
 			CreatedAt: salaryReceived,
 		},
 	}
