@@ -9,7 +9,7 @@ jobs:
     # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/configuration-reference/#executor-job
     docker:
-      - image: circleci/golang:1.9
+      - image: cimg/base:stable
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
@@ -26,17 +26,3 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-# version: 2.1
-# jobs:
-#   build:
-#     docker:
-#       - image: circleci/golang:1.9
-#     working_directory: /go/src/github.com/gaspartv/financial-planning-system
-#     steps:
-#       - checkout
-#       - run: go get -v -t -d ./...
-#       - run: go test -v ./...
-# workflows:
-#   say-hello-workflow:
-#     jobs:
-#       - say-hello
