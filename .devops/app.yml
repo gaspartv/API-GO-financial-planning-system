@@ -1,0 +1,7 @@
+version: '3'
+service:
+  app:
+    image: diego/finance
+    container_name: 'app_finance_dio'
+    port:
+      - 8080:8080
